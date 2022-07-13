@@ -1,6 +1,7 @@
 package com.rafael.dsmeta.entities;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Objects;
 
@@ -28,14 +29,14 @@ public class Sale implements Serializable {
 
 	private Integer deals;
 
-	private Double amount;
+	private BigDecimal amount;
 
 	private LocalDate date;
 
 	public Sale() {
 	}
 
-	public Sale(Long id, String sallerName, Integer visited, Integer deals, Double amount, LocalDate date) {
+	public Sale(Long id, String sallerName, Integer visited, Integer deals, BigDecimal amount, LocalDate date) {
 		this.id = id;
 		this.sallerName = sallerName;
 		this.visited = visited;
@@ -76,11 +77,11 @@ public class Sale implements Serializable {
 		this.deals = deals;
 	}
 
-	public Double getAmount() {
+	public BigDecimal getAmount() {
 		return amount;
 	}
 
-	public void setAmount(Double amount) {
+	public void setAmount(BigDecimal amount) {
 		this.amount = amount;
 	}
 
