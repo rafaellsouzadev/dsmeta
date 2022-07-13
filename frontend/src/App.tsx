@@ -11,7 +11,7 @@ function App() {
             <SalesCard />
           </div>
         </section>
-      </main>
+      </main>     
     </>
   )
 }
