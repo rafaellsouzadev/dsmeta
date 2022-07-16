@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "babel src -d lib",
+    "build": "[frontend] build --output public",
     "prebuild": "jest",
     "preview": "vite preview"
   },
