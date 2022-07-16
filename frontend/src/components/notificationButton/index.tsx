@@ -15,12 +15,12 @@ function handleClick(saleId: number) {
             })
 }
 
-function NotificationButton() {
+function NotificationButton( {saleId} : Props ) {
     return (
         <div className="dsmeta-red-btn" onClick={() => handleClick(saleId)}>
             <img src={icon} alt="Notificar" />
         </div>
-    )
+    );
 }
 
 export default NotificationButton;
